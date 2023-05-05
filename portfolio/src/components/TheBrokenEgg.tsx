@@ -9,18 +9,22 @@ const TheBrokenEgg = (): JSX.Element => {
 					The Broken Egg
 				</h1>
 			</div>
-			<div>
+			<div className="lg:w-[80%]">
 				<img
 					src="/TheBrokenEggHome.png"
-					className="rounded-lg border-2 border-eggText"
+					className="rounded-lg border-2 border-eggText w-full"
 				/>
 			</div>
 			<div className="flex justify-center gap-10 text-4xl text-eggText">
-				<a href="http://google.com" className="z-10">
+				<a href="https://github.com/Lasseignejk/TheBrokenEgg" className="z-10">
 					<FaGithub />
 				</a>
-				<SiMedium />
-				<FaGlobe />
+				<a href="https://medium.com/@jayelonlasseigne/the-broken-egg-react-redux-typescript-project-7358591fc9e3">
+					<SiMedium />
+				</a>
+				<a href="https://thebrokenegg.onrender.com/">
+					<FaGlobe />
+				</a>
 			</div>
 			<div>
 				<h3 className="text-2xl font-bold textShadow font-eggTitle text-center">

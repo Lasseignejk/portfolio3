@@ -12,10 +12,10 @@ const BetterReads = (): JSX.Element => {
 	return (
 		<div className="bg-readsBackground px-[2rem] pb-[2rem] pt-4 text-readsText flex flex-col gap-3 items-center lg:px-24 xl:px-[30rem]">
 			<h1 className="font-readsTitle text-3xl">BetterReads</h1>
-			<div className="">
+			<div className="lg:w-[80%]">
 				<img
 					src="/betterReadsHome.png"
-					className="border-2 border-readsText rounded-lg p-1"
+					className="border-2 border-readsText rounded-lg w-full"
 				/>
 			</div>
 			<div className="flex justify-center gap-10 text-4xl text-readsText">
@@ -113,8 +113,8 @@ const BetterReads = (): JSX.Element => {
 			</div>
 			<div className="flex justify-center items-center">
 				<img
-					src="/BetterReadsMobileHome.png"
-					className="border-2 border-readsText rounded-lg p-1 w-4/5"
+					src="/betterReadsMobile.png"
+					className="border-2 border-readsText rounded-lg w-4/5"
 				/>
 			</div>
 		</div>

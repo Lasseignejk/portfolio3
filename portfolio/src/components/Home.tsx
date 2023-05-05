@@ -26,7 +26,7 @@ const Home = (): JSX.Element => {
 				<img
 					src="/circleY.png"
 					alt=""
-					className="absolute opacity-50 w-1/3 left-[30%] top-[75%] lg:top-auto lg:bottom-0 lg:max-w-[460px]"
+					className="absolute opacity-50 w-1/3 left-[30%] top-[75%] md:top-auto md:bottom-0 lg:max-w-[460px]"
 				/>
 				{/* opacity 90 */}
 				<img
@@ -52,7 +52,7 @@ const Home = (): JSX.Element => {
 				<img
 					src="/circleDkBG.png"
 					alt=""
-					className="absolute opacity-90 w-1/6 left-[80%] top-[70%] lg:top-[50%]"
+					className="absolute opacity-90 w-1/6 left-[80%] top-[70%] md:top-[50%]"
 				/>
 				<img
 					src="/circleDkBG.png"
@@ -62,18 +62,18 @@ const Home = (): JSX.Element => {
 				<img
 					src="/circleY.png"
 					alt=""
-					className="absolute opacity-90  w-1/4 left-[65%] top-[80%] lg:bottom-[2%] lg:top-auto lg:max-w-[260px]"
+					className="absolute opacity-90  w-1/4 left-[65%] top-[80%] md:bottom-[2%] md:top-auto lg:max-w-[260px]"
 				/>
 				<img
 					src="/circleDkBG.png"
 					alt=""
-					className="absolute opacity-90  w-1/3 left-[2%] top-[60%] lg:w-1/4 lg:top-auto lg:bottom-[5%] lg:max-w-[300px]"
+					className="absolute opacity-90  w-1/3 left-[2%] top-[60%] lg:w-1/4 md:top-auto md:bottom-[5%] lg:max-w-[300px]"
 				/>
 				{/* circle behind the intro words */}
 				<img
 					src="/circleY.png"
 					alt=""
-					className="absolute sm:w-[90%] md:w-[550px]"
+					className="absolute sm:w-[90%] sm:max-w-[500px] md:w-[550px]"
 				/>
 				<div className="absolute flex flex-col justify-center items-center gap-10">
 					<div className="flex flex-col gap-3">

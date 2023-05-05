@@ -17,7 +17,7 @@ export default {
 			readsBackground: "#f7dfff",
 			readsText: "#140024",
 			readsLogo: "#d796ff",
-			navTransparent: "rgba(0,0,0,0)",
+			navLight: "rgba(255,255,255,.2)",
 		},
 		fontFamily: {
 			themeText: ["Patrick Hand", "cursive"],

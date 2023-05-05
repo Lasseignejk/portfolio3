@@ -35,12 +35,17 @@ const ProjectsNav = ({
 				<li
 					onClick={() => showAvocado()}
 					className="px-4 py-1 hover:cursor-pointer hover:scale-105 duration-200 ease-in md:flex md:gap-2">
-					<img src="avocado_green.svg" alt="" className="h-[33px]" />
+					<img
+						src="avocado_green.svg"
+						alt=""
+						className="hidden h-[33px] lg:block"
+					/>
+					<img src="icon_green.png" alt="" className="h-[30px] lg:hidden" />
 				</li>
 				<li
 					onClick={() => showEgg()}
 					className="px-4 py-1 hover:cursor-pointer hover:scale-105 duration-200 ease-in  md:flex md:gap-2 md:items-center">
-					<h3 className="hidden font-eggTitle font-bold text-eggText md:block">
+					<h3 className="hidden font-eggTitle font-bold text-eggText lg:block">
 						The Broken Egg
 					</h3>
 					<span className="text-eggBackground">
@@ -50,7 +55,7 @@ const ProjectsNav = ({
 				<li
 					onClick={() => showReads()}
 					className="px-4 py-1 hover:cursor-pointer hover:scale-105 duration-200 ease-in md:flex md:gap-2 md:items-center">
-					<h3 className="hidden md:block font-readsTitle text-readsText">
+					<h3 className="hidden lg:block font-readsTitle text-readsText">
 						BetterReads
 					</h3>
 					<span className="text-readsLogo">

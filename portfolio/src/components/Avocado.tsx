@@ -1,4 +1,4 @@
-import { FaGithub, FaReact, FaYoutube, FaFigma } from "react-icons/fa";
+import { FaGithub, FaReact, FaYoutube, FaFigma, FaGlobe } from "react-icons/fa";
 import { SiRedux, SiSupabase, SiTailwindcss, SiPlotly } from "react-icons/si";
 
 const Avocado = (): JSX.Element => {
@@ -7,17 +7,22 @@ const Avocado = (): JSX.Element => {
 			<div className="">
 				<img src="/avocado_gray.svg" className="w-[150px]" />
 			</div>
-			<div className="flex justify-center">
+			<div className="flex justify-center lg:w-[80%]">
 				<img
 					src="/AvocadoManageRestaurants.png"
-					className="border-2 border-themeDkText rounded-xl md:w-3/4 md:max-w-[700px]"
+					className="border-2 border-themeDkText rounded-xl  w-full"
 				/>
 			</div>
 			<div className="flex justify-center gap-14 text-4xl">
-				<a href="http://google.com" className="z-10">
+				<a href="http://google.com" className="">
 					<FaGithub />
 				</a>
-				<FaYoutube />
+				<a href="https://www.youtube.com/watch?v=wsLZCA090U4">
+					<FaYoutube />
+				</a>
+				<a href="https://avocado-frontend.onrender.com/">
+					<FaGlobe />
+				</a>
 			</div>
 			<div>
 				<h3 className="text-xl font-bold textShadow text-center">
@@ -91,7 +96,7 @@ const Avocado = (): JSX.Element => {
 				</div>
 			</div>
 			<div className="flex justify-center">
-				<img src="/AvocadoLogin.png" className="rounded-lg w-4/5" />
+				<img src="/AvocadoLogin.png" className="rounded-lg w-4/5 lg:w-1/2" />
 			</div>
 		</div>
 	);
