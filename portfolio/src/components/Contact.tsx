@@ -75,10 +75,10 @@ const Contact = (): JSX.Element => {
 			/>
 			<div className="absolute flex flex-col justify-center items-center gap-5">
 				<div className="flex flex-col items-center gap-3 justify-center">
-					<h2 className="text-3xl text-themeYellow textShadow tracking-wide text-center">
+					<h2 className="text-3xl text-themeLtText textShadow tracking-wide text-center">
 						Connect with me on LinkedIn!
 					</h2>
-					<div className="text-[4.5rem] text-themeYellow hover:text-themeLtBlueGray ease-in duration-200">
+					<div className="text-[4.5rem] text-themeLtText hover:text-themeYellow ease-in duration-200">
 						<a href="https://www.linkedin.com/in/jayelon-lasseigne-66970a229/">
 							<FaLinkedin />
 						</a>

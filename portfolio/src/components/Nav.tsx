@@ -2,7 +2,9 @@ import { FaHome, FaHatWizard, FaCode, FaEnvelope } from "react-icons/fa";
 
 const Nav = (): JSX.Element => {
 	return (
-		<nav className="bg-themeLtBlueGray fixed bottom-0 top-auto left-0 z-10 flex justify-evenly w-full lg:top-0 lg:bottom-auto lg:bg-navLight lg:justify-end lg:pr-2">
+		<nav
+			aria-label="primary"
+			className="bg-themeLtBlueGray fixed bottom-0 top-auto left-0 z-10 flex justify-evenly w-full lg:top-0 lg:bottom-auto lg:bg-navLight lg:justify-end lg:pr-2">
 			<ul className="flex gap-8 justify-evenly w-full py-3 px-3 lg:justify-end">
 				<a href="#Home">
 					<li className="text-3xl flex items-center gap-2 hover:cursor-pointer duration-200 ease-in textShadow relative navItem md:text-4xl lg:text-3xl">
