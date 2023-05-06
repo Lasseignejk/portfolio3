@@ -22,9 +22,6 @@ const About = (): JSX.Element => {
 			<section
 				id="About"
 				className="w-full min-h-screen bg-themeDkBlueGray p-[2rem] pb-16 z-20 md:pb-0 lg:pt-20">
-				<header className="text-4xl font-bold text-themeYellow textShadow">
-					About Me
-				</header>
 				<div className="">
 					<div className="w-full flex justify-center py-5">
 						<div className="w-2/3 md:w-1/2 lg:w-[260px]">
@@ -44,7 +41,7 @@ const About = (): JSX.Element => {
 
 						<div className="mb-[20px]">
 							<header className="text-3xl text-themeYellow textShadow font-bold mb-[20px] text-center">
-								Tech Stack
+								What I code with
 							</header>
 							<div className="flex gap-3 text-5xl flex-wrap justify-center text-themeLtText">
 								<FaPython />

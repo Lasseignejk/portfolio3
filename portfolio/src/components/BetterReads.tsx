@@ -19,10 +19,14 @@ const BetterReads = (): JSX.Element => {
 				/>
 			</div>
 			<div className="flex justify-center gap-10 text-4xl text-readsText">
-				<a href="https://github.com/jessbecoding/BetterReads" className="z-10">
+				<a
+					href="https://github.com/jessbecoding/BetterReads"
+					className="px-2 py-2 rounded-full hover:scale-125 duration-200 ease-in hover:bg-readsLogo">
 					<FaGithub />
 				</a>
-				<a href="https://medium.com/@jayelonlasseigne/betterreads-my-backend-project-ef822afa7af6">
+				<a
+					href="https://medium.com/@jayelonlasseigne/betterreads-my-backend-project-ef822afa7af6"
+					className="px-2 py-2 rounded-full hover:scale-125 duration-200 ease-in hover:bg-readsLogo">
 					<SiMedium />
 				</a>
 			</div>
@@ -63,7 +67,7 @@ const BetterReads = (): JSX.Element => {
 			</div>
 			<div>
 				<h3 className="text-2xl font-readsTitle mb-3 text-center">
-					Tech Stack
+					Built With
 				</h3>
 				<div className="flex justify-evenly flex-wrap gap-5 font-readsText">
 					<div className="flex flex-col text-center items-center text-xl">

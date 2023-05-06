@@ -12,13 +12,13 @@ const Projects = (): JSX.Element => {
 		<>
 			<a id="Projects"></a>
 			<section id="Projects" className="w-full min-h-screen bg-themeLtBlueGray">
-				<header className="text-4xl font-bold text-themeTextDk textShadow pt-[2rem] pl-[2rem] lg:pt-20">
-					Projects
-				</header>
 				<ProjectsNav
 					setAvocado={setAvocado}
 					setEgg={setEgg}
 					setReads={setReads}
+					avocado={avocado}
+					egg={egg}
+					reads={reads}
 				/>
 				{avocado && <Avocado />}
 				{egg && <TheBrokenEgg />}

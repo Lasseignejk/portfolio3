@@ -16,18 +16,24 @@ const TheBrokenEgg = (): JSX.Element => {
 				/>
 			</div>
 			<div className="flex justify-center gap-10 text-4xl text-eggText">
-				<a href="https://github.com/Lasseignejk/TheBrokenEgg" className="z-10">
+				<a
+					href="https://github.com/Lasseignejk/TheBrokenEgg"
+					className="px-2 py-2 rounded-full hover:scale-125 duration-200 ease-in hover:bg-eggHover">
 					<FaGithub />
 				</a>
-				<a href="https://medium.com/@jayelonlasseigne/the-broken-egg-react-redux-typescript-project-7358591fc9e3">
+				<a
+					href="https://medium.com/@jayelonlasseigne/the-broken-egg-react-redux-typescript-project-7358591fc9e3"
+					className="px-2 py-2 rounded-full hover:scale-125 duration-200 ease-in hover:bg-eggHover">
 					<SiMedium />
 				</a>
-				<a href="https://thebrokenegg.onrender.com/">
+				<a
+					href="https://thebrokenegg.onrender.com/"
+					className=" px-2 py-2 rounded-full hover:scale-125 duration-200 ease-in hover:bg-eggHover">
 					<FaGlobe />
 				</a>
 			</div>
 			<div>
-				<h3 className="text-2xl font-bold textShadow font-eggTitle text-center">
+				<h3 className="text-2xl font-bold font-eggTitle text-center">
 					Description
 				</h3>
 				<p className="font-eggText text-center">
@@ -38,9 +44,7 @@ const TheBrokenEgg = (): JSX.Element => {
 				</p>
 			</div>
 			<div>
-				<h3 className="text-2xl textShadow font-eggTitle font-bold text-center">
-					Role
-				</h3>
+				<h3 className="text-2xl font-eggTitle font-bold text-center">Role</h3>
 				<p className="font-eggText text-center">
 					As the sole creator, I implemented React as my frontend framework,
 					then paired it with Redux to manage state across all of my components.
@@ -51,7 +55,7 @@ const TheBrokenEgg = (): JSX.Element => {
 				</p>
 			</div>
 			<div>
-				<h3 className="text-2xl font-bold textShadow font-eggTitle text-center">
+				<h3 className="text-2xl font-bold font-eggTitle text-center">
 					Challenges
 				</h3>
 				<p className="font-eggText text-center">
@@ -64,8 +68,8 @@ const TheBrokenEgg = (): JSX.Element => {
 				</p>
 			</div>
 			<div>
-				<h3 className="text-2xl font-bold textShadow mb-3 font-eggTitle text-center">
-					Tech Stack
+				<h3 className="text-2xl font-bold mb-3 font-eggTitle text-center">
+					Built With
 				</h3>
 				<div className="flex justify-evenly flex-wrap gap-5 font-eggText">
 					<div className="flex flex-col text-center items-center text-xl">

@@ -14,28 +14,33 @@ const Avocado = (): JSX.Element => {
 				/>
 			</div>
 			<div className="flex justify-center gap-14 text-4xl">
-				<a href="http://google.com" className="">
+				<a
+					href="https://github.com/Lasseignejk/Avocado-frontend"
+					className="px-2 py-2 rounded-full hover:scale-125 duration-200 ease-in hover:bg-avocadoHover">
 					<FaGithub />
 				</a>
-				<a href="https://www.youtube.com/watch?v=wsLZCA090U4">
+				<a
+					href="https://www.youtube.com/watch?v=wsLZCA090U4"
+					className="px-2 py-2 rounded-full hover:scale-125 duration-200 ease-in hover:bg-avocadoHover">
 					<FaYoutube />
 				</a>
-				<a href="https://avocado-frontend.onrender.com/">
+				<a
+					href="https://avocado-frontend.onrender.com/"
+					className="px-2 py-2 rounded-full hover:scale-125 duration-200 ease-in hover:bg-avocadoHover">
 					<FaGlobe />
 				</a>
 			</div>
 			<div>
-				<h3 className="text-xl font-bold textShadow text-center">
-					Description
-				</h3>
+				<h3 className="text-2xl font-bold text-center">Description</h3>
 				<p className="text-center">
-					Inspired by the POS software 'Toast', 'Avocado' lets restaurant owners
-					view current orders and reports for their restaurants. Conversely,
-					customers can view restaurants and place orders.{" "}
+					Inspired by the point-of-sale software 'Toast', 'Avocado' lets
+					restaurant owners view current orders and reports for their
+					restaurants. Conversely, customers can view restaurants and place
+					orders.{" "}
 				</p>
 			</div>
 			<div>
-				<h3 className="text-xl font-bold textShadow text-center">Role</h3>
+				<h3 className="text-2xl font-bold text-center">Role</h3>
 				<p className="text-center">
 					As the project manager of a group of four, I participated in daily
 					standups with my instructors and led daily standups with my team. Not
@@ -46,7 +51,7 @@ const Avocado = (): JSX.Element => {
 				</p>
 			</div>
 			<div>
-				<h3 className="text-xl font-bold textShadow text-center">Challenges</h3>
+				<h3 className="text-2xl font-bold text-center">Challenges</h3>
 				<p className="text-center">
 					One of the largest challenges I faced on Avocado was keeping the group
 					organized. Even though we had spent a day or two planning out the flow
@@ -61,9 +66,7 @@ const Avocado = (): JSX.Element => {
 				</p>
 			</div>
 			<div>
-				<h3 className="text-2xl font-bold textShadow mb-2 text-center">
-					Tech Stack
-				</h3>
+				<h3 className="text-2xl font-bold mb-2 text-center">Built With</h3>
 				<div className="flex justify-evenly flex-wrap gap-5">
 					<div className="flex flex-col text-center items-center text-xl">
 						<FaReact />
