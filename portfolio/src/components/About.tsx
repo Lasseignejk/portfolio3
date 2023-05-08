@@ -17,8 +17,6 @@ import {
 
 const About = (): JSX.Element => {
 	return (
-		<>
-			<a id="About"></a>
 			<section
 				id="About"
 				className="w-full min-h-screen bg-themeDkBlueGray p-[2rem] pb-16 z-20 md:pb-0 lg:pt-20">
@@ -71,7 +69,6 @@ const About = (): JSX.Element => {
 					</div>
 				</div>
 			</section>
-		</>
 	);
 };
 

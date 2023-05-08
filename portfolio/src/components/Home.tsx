@@ -2,11 +2,10 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = (): JSX.Element => {
 	return (
-		<>
-			<a id="Home"></a>
 			<section
 				id="Home"
 				className="w-full h-screen bg-themeBlueGray flex flex-col justify-center items-center gap-[30px]relative pb-16 overflow-hidden md:pb-0">
+		
 				{/* opacity 50 */}
 				<img
 					src="/circleY.png"
@@ -98,7 +97,7 @@ const Home = (): JSX.Element => {
 					</div>
 				</div>
 			</section>
-		</>
+	
 	);
 };
 

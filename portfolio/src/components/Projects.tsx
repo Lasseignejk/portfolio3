@@ -9,8 +9,6 @@ const Projects = (): JSX.Element => {
 	const [egg, setEgg] = useState<boolean>(false);
 	const [reads, setReads] = useState<boolean>(false);
 	return (
-		<>
-			<a id="Projects"></a>
 			<section id="Projects" className="w-full min-h-screen bg-themeLtBlueGray">
 				<ProjectsNav
 					setAvocado={setAvocado}
@@ -24,7 +22,7 @@ const Projects = (): JSX.Element => {
 				{egg && <TheBrokenEgg />}
 				{reads && <BetterReads />}
 			</section>
-		</>
+		
 	);
 };
 
