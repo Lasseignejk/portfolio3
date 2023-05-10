@@ -25,7 +25,7 @@ const About = (): JSX.Element => {
 						<div className="w-2/3 md:w-1/2 lg:w-[260px]">
 							<img
 								src="profilePic.jpg"
-								alt=""
+								alt="A picture of Jaye"
 								className="shadow-2xl rounded-[50%]"
 							/>
 						</div>

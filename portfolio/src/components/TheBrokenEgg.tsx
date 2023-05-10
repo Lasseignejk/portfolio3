@@ -11,7 +11,7 @@ const TheBrokenEgg = (): JSX.Element => {
 			</div>
 			<div className="lg:w-[80%]">
 				<img
-					src="/TheBrokenEggHome.png"
+					src="/TheBrokenEggHome.png" alt="The landing page for The Broken Egg"
 					className="rounded-lg border-2 border-eggText w-full"
 				/>
 			</div>
@@ -101,6 +101,7 @@ const TheBrokenEgg = (): JSX.Element => {
 			<div className="flex justify-center items-center">
 				<img
 					src="/TheBrokenEggMobileSearch.png"
+					alt="The search page for The Broken Egg on mobile"
 					className="rounded-lg border-2 border-eggText w-4/5"
 				/>
 			</div>

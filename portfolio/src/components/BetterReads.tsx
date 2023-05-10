@@ -15,6 +15,7 @@ const BetterReads = (): JSX.Element => {
 			<div className="lg:w-[80%]">
 				<img
 					src="/betterReadsHome.png"
+					alt="The landing page for BetterReads"
 					className="border-2 border-readsText rounded-lg w-full"
 				/>
 			</div>
@@ -38,7 +39,7 @@ const BetterReads = (): JSX.Element => {
 					a site where you can do just that!
 				</p>
 				<p className="font-readsText text-center">
-					Better Reads was created to help connect authors and readers together.
+					BetterReads was created to help connect authors and readers together.
 					Authors can upload information on their books to the site and can post
 					events like book signings or Q&As. Readers can then browse those
 					events and attend ones they are interested in. They can also browse
@@ -118,6 +119,7 @@ const BetterReads = (): JSX.Element => {
 			<div className="flex justify-center items-center">
 				<img
 					src="/betterReadsMobile.png"
+					alt="The landing page for BetterReads on Mobile"
 					className="border-2 border-readsText rounded-lg w-4/5"
 				/>
 			</div>

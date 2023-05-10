@@ -5,10 +5,11 @@ const Avocado = (): JSX.Element => {
 	return (
 		<div className="bg-avocadoBackground px-[2rem] pb-[2rem] pt-4 text-avocadoText flex flex-col gap-3 items-center lg:px-24 xl:px-[30rem]">
 			<div className="">
-				<img src="/avocado_gray.svg" className="w-[150px]" />
+				<img alt="Avocado logo" src="/avocado_gray.svg" className="w-[150px]" />
 			</div>
 			<div className="flex justify-center lg:w-[80%]">
 				<img
+					alt="The admin dashboard on Avocado"
 					src="/AvocadoManageRestaurants.png"
 					className="border-2 border-themeDkText rounded-xl  w-full"
 				/>
@@ -99,7 +100,11 @@ const Avocado = (): JSX.Element => {
 				</div>
 			</div>
 			<div className="flex justify-center">
-				<img src="/AvocadoLogin.png" className="rounded-lg w-4/5 lg:w-1/2" />
+				<img
+					alt="The login screen for Avocado"
+					src="/AvocadoLogin.png"
+					className="rounded-lg w-4/5 lg:w-1/2"
+				/>
 			</div>
 		</div>
 	);
