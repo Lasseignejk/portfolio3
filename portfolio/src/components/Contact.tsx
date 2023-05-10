@@ -4,7 +4,7 @@ const Contact = (): JSX.Element => {
 	return (
 		<section
 			id="Contact"
-			className="w-full h-screen pb-16 bg-themeBlueGray flex flex-col justify-center items-center px-[2rem] text-themeDkText relative lg:pt-20">
+			className="w-full h-screen pb-10 bg-themeBlueGray flex flex-col justify-center items-center px-[2rem] text-themeDkText relative lg:pt-20">
 			{/* opacity 50 */}
 			<img
 				src="/circleY.png"
@@ -14,7 +14,7 @@ const Contact = (): JSX.Element => {
 			<img
 				src="/circleY.png"
 				alt=""
-				className="absolute opacity-50 w-1/2 left-[47%] top-0 lg:left-[65%] lg:w-1/3 lg:top-auto lg:bottom-[10%]"
+				className="absolute opacity-50 w-1/3 left-[47%] top-0 lg:left-[65%] lg:w-1/3 lg:top-auto lg:bottom-[10%]"
 			/>
 			<img
 				src="/circleDkBG.png"
@@ -24,7 +24,7 @@ const Contact = (): JSX.Element => {
 			<img
 				src="/circleY.png"
 				alt=""
-				className="absolute opacity-50 w-1/3 left-[30%] top-[75%] lg:top-auto lg:bottom-0 lg:max-w-[460px]"
+				className="absolute opacity-50 w-1/3 max-w-[200px] left-[30%] bottom-[5%] lg:top-auto lg:bottom-0 lg:max-w-[460px]"
 			/>
 			{/* opacity 90 */}
 			<img
@@ -40,7 +40,7 @@ const Contact = (): JSX.Element => {
 			<img
 				src="/circleDkBG.png"
 				alt=""
-				className="absolute opacity-90 w-1/4 block left-[15%] top-[78%] lg:hidden"
+				className="absolute opacity-90 w-1/4 block left-[15%] bottom-[10%] lg:hidden"
 			/>
 			<img
 				src="/circleY.png"
@@ -60,25 +60,25 @@ const Contact = (): JSX.Element => {
 			<img
 				src="/circleY.png"
 				alt=""
-				className="absolute opacity-90  w-1/4 left-[65%] top-[80%] lg:bottom-[2%] lg:top-auto lg:max-w-[260px]"
+				className="absolute opacity-90  w-1/4 left-[65%] bottom-[10%] lg:bottom-[2%] lg:top-auto lg:max-w-[260px]"
 			/>
 			<img
 				src="/circleDkBG.png"
 				alt=""
-				className="absolute opacity-90  w-1/3 left-[2%] top-[60%] lg:w-1/4 lg:top-auto lg:bottom-[5%] lg:max-w-[300px]"
+				className="hidden absolute opacity-90 sm:max-w-[100px] left-[2%] top-[60%] lg:w-1/4 lg:top-auto lg:bottom-[5%] lg:max-w-[300px]"
 			/>
 			{/* circle behind the intro words */}
 			<img
 				src="/circleDkBG.png"
 				alt=""
-				className="absolute sm:w-[90%] md:w-[550px]"
+				className="absolute sm:w-[70%] sm:max-w-[300px] md:w-[350px] md:max-w-[400px]"
 			/>
 			<div className="absolute flex flex-col justify-center items-center gap-5">
-				<div className="flex flex-col items-center gap-3 justify-center">
-					<h2 className="text-3xl text-themeLtText textShadow tracking-wide text-center">
+				<div className="flex flex-col items-center gap-3 justify-center circleTextContainer md:w-3/4">
+					<h2 className="text-3xl text-themeLtText textShadow tracking-wide text-center circleIntro">
 						Connect with me on LinkedIn!
 					</h2>
-					<div className="text-[4.5rem] text-themeLtText hover:text-themeYellow ease-in duration-200">
+					<div className="text-[4.5rem] text-themeLtText hover:text-themeYellow ease-in duration-200 circleIcon">
 						<a href="https://www.linkedin.com/in/jayelon-lasseigne-66970a229/">
 							<FaLinkedin />
 						</a>

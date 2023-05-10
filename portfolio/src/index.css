@@ -22,3 +22,35 @@
 html {
 	scroll-behavior: smooth;
 }
+
+@media screen and (orientation: landscape) and (max-width: 900px)  {
+	.mainCircle {
+		width: 300px;
+		max-width: 300px;
+	}
+	.circleTextContainer {
+		gap: 1rem;
+	}
+	.circleText {
+		gap: 1rem;
+	}
+	.circleGreeting {
+		font-size: 2.3rem;
+	}
+	.circleIntro {
+		font-size: 1.2rem;
+	}
+	.circleIcon {
+		font-size: 3rem;
+	}
+		.profilePicDiv {
+		max-width: 200px;
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 800px) {
+	.profilePicDiv {
+		max-width: 200px;
+	}
+}
+
