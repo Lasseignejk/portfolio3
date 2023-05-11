@@ -22,7 +22,7 @@ const About = (): JSX.Element => {
 				className="w-full min-h-screen bg-themeDkBlueGray p-[2rem] pb-16 z-20 md:pb-3 lg:pt-20">
 				<div className="">
 					<div className="w-full flex justify-center py-5">
-						<div className="w-2/3 md:w-1/2 lg:w-[260px] profilePicDiv">
+						<div className="w-2/3 md:w-1/2 md:max-w-[260px] lg:w-[260px] profilePicDiv">
 							<img
 								src="profilePic.jpg"
 								alt="A picture of Jaye"

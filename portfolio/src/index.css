@@ -23,11 +23,8 @@ html {
 	scroll-behavior: smooth;
 }
 
-@media screen and (orientation: landscape) and (max-width: 900px)  {
-	.mainCircle {
-		width: 300px;
-		max-width: 300px;
-	}
+@media screen and (orientation: landscape) and (max-width: 920px)  {
+
 	.circleTextContainer {
 		gap: 1rem;
 	}
