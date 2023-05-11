@@ -19,7 +19,7 @@ const About = (): JSX.Element => {
 	return (
 			<section
 				id="About"
-				className="w-full min-h-screen bg-themeDkBlueGray p-[2rem] pb-16 z-20 md:pb-0 lg:pt-20">
+				className="w-full min-h-screen bg-themeDkBlueGray p-[2rem] pb-16 z-20 md:pb-3 lg:pt-20">
 				<div className="">
 					<div className="w-full flex justify-center py-5">
 						<div className="w-2/3 md:w-1/2 lg:w-[260px] profilePicDiv">

@@ -10,13 +10,18 @@ import {
 
 const BetterReads = (): JSX.Element => {
 	return (
-		<div className="bg-readsBackground px-[2rem] pb-[2rem] pt-4 text-readsText flex flex-col gap-3 items-center lg:px-24 xl:px-[30rem]">
+		<div className="bg-readsBackground px-[2rem] pb-[2rem] pt-4 text-readsText flex flex-col gap-3 items-center lg:px-[10%]">
 			<h1 className="font-readsTitle text-3xl">BetterReads</h1>
-			<div className="lg:w-[80%]">
+			<div className="flex justify-center items-center gap-3 h-[110px] sm:h-[150px] md:h-[260px] lg:h-[300px] xl:h-[400px]">
 				<img
 					src="/betterReadsHome.png"
 					alt="The landing page for BetterReads"
-					className="border-2 border-readsText rounded-lg w-full"
+					className="border-2 border-readsText rounded-lg w-fit h-full"
+				/>
+				<img
+					src="/betterReadsMobile.png"
+					alt="The landing page for BetterReads on Mobile"
+					className="border-2 border-readsText rounded-lg w-fit h-full"
 				/>
 			</div>
 			<div className="flex justify-center gap-10 text-4xl text-readsText">
@@ -115,13 +120,6 @@ const BetterReads = (): JSX.Element => {
 						<p>Figma</p>
 					</div>
 				</div>
-			</div>
-			<div className="flex justify-center items-center">
-				<img
-					src="/betterReadsMobile.png"
-					alt="The landing page for BetterReads on Mobile"
-					className="border-2 border-readsText rounded-lg w-4/5"
-				/>
 			</div>
 		</div>
 	);

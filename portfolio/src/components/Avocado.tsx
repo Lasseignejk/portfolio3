@@ -3,15 +3,20 @@ import { SiRedux, SiSupabase, SiTailwindcss, SiPlotly } from "react-icons/si";
 
 const Avocado = (): JSX.Element => {
 	return (
-		<div className="bg-avocadoBackground px-[2rem] pb-[2rem] pt-4 text-avocadoText flex flex-col gap-3 items-center lg:px-24 xl:px-[30rem]">
+		<div className="bg-avocadoBackground px-[2rem] pb-[2rem] pt-4 text-avocadoText flex flex-col gap-3 items-center lg:px-[10%]">
 			<div className="">
 				<img alt="Avocado logo" src="/avocado_gray.svg" className="w-[150px]" />
 			</div>
-			<div className="flex justify-center lg:w-[80%]">
+			<div className="flex justify-center items-center gap-1 h-[110px] sm:h-[150px] md:h-[260px] lg:h-[300px] xl:h-[400px]">
 				<img
 					alt="The admin dashboard on Avocado"
 					src="/AvocadoManageRestaurants.png"
-					className="border-2 border-themeDkText rounded-xl  w-full"
+					className="border-2 border-themeDkText rounded-lg w-fit h-full"
+				/>
+				<img
+					alt="The login screen for Avocado"
+					src="/AvocadoLogin.png"
+					className="rounded-lg w-fit h-full"
 				/>
 			</div>
 			<div className="flex justify-center gap-14 text-4xl">
@@ -98,13 +103,6 @@ const Avocado = (): JSX.Element => {
 						<p>Plotly</p>
 					</div>
 				</div>
-			</div>
-			<div className="flex justify-center">
-				<img
-					alt="The login screen for Avocado"
-					src="/AvocadoLogin.png"
-					className="rounded-lg w-4/5 lg:w-1/2"
-				/>
 			</div>
 		</div>
 	);
