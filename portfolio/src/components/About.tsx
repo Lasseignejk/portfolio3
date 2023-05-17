@@ -58,7 +58,7 @@ const About = (): JSX.Element => {
 						</div>
 						<div className="flex text-center justify-center items-center gap-3">
 							<a
-								href="src/resume/JayelonLasseigneResume.pdf"
+								href="/resume/JayelonLasseigneResume.pdf"
 								download
 								className="">
 								<p className="text-themeLtText bg-themeDkText text-2xl border-2 px-3 py-3 rounded-full hover:text-themeDkText hover:bg-themeYellow duration-200 ease-in m-0">
