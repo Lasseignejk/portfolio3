@@ -1,5 +1,5 @@
 import { KeyboardEvent } from "react";
-import { FaBookOpen, FaEgg } from "react-icons/fa";
+import { FaBookOpen, FaEgg, FaPlus } from "react-icons/fa";
 
 interface ProjectsNavProps {
 	avocado: boolean;
@@ -8,33 +8,48 @@ interface ProjectsNavProps {
 	setEgg: React.Dispatch<React.SetStateAction<boolean>>;
 	reads: boolean;
 	setReads: React.Dispatch<React.SetStateAction<boolean>>;
+	more: boolean;
+	setMore: React.Dispatch<React.SetStateAction<boolean>>
 }
 
 const ProjectsNav = ({
 	avocado,
 	egg,
 	reads,
+	more,
 	setAvocado,
 	setEgg,
 	setReads,
+	setMore,
 }: ProjectsNavProps): JSX.Element => {
 	const showAvocado = (): void => {
 		setAvocado(true);
 		setEgg(false);
 		setReads(false);
+		setMore(false); 
 	};
 
 	const showEgg = (): void => {
 		setAvocado(false);
 		setEgg(true);
 		setReads(false);
+		setMore(false); 
 	};
 
 	const showReads = (): void => {
 		setAvocado(false);
 		setEgg(false);
 		setReads(true);
+		setMore(false); 
+
 	};
+
+	const showMore = (): void => {
+		setAvocado(false);
+		setEgg(false);
+		setReads(false)
+		setMore(true) 
+	}
 
 	const handleShowAvocado = (e: KeyboardEvent<HTMLLIElement>): void => {
 		if (e.key === "Enter") {
@@ -50,6 +65,11 @@ const ProjectsNav = ({
 	const handleShowReads = (e: KeyboardEvent): void => {
 		if (e.key === "Enter") {
 			showReads();
+		}
+	};
+	const handleShowMore = (e: KeyboardEvent): void => {
+		if (e.key === "Enter") {
+			showMore();
 		}
 	};
 
@@ -106,6 +126,20 @@ const ProjectsNav = ({
 					</h3>
 					<span className="text-readsLogo">
 						<FaBookOpen />
+					</span>
+				</li>
+				<li
+					tabIndex={0}
+					onKeyDown={handleShowMore}
+					onClick={() => showMore()}
+					className={`px-4 py-1 hover:cursor-pointer hover:scale-105 duration-200 ease-in hover:bg-themeYellow focus:bg-themeYellow rounded-full md:flex md:gap-2 md:items-center ${
+						more ? "bg-themeYellow" : ""
+					}`}>
+					<h3 className="hidden lg:block">
+						More
+					</h3>
+					<span className="text-themeDkText">
+						<FaPlus />
 					</span>
 				</li>
 			</ul>
