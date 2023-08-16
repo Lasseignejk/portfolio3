@@ -18,13 +18,10 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 		project_title,
 		logo,
 		title_font,
-		header_class,
 		dates,
 		tech_used,
 		colors_fonts,
-
 		description,
-
 		link_hover,
 		links,
 		border,
@@ -122,43 +119,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
 					</Link>
 				</div>
 			</div>
-
-			{/* <div
-				className={`p-3 hidden items-center md:items-start  md:max-w-[1100px]`}>
-				<div className="flex gap-3 h-[110px] sm:h-[150px] md:h-[260px] lg:h-[300px] xl:h-[400px]">
-					{images &&
-						images.map(
-							(image: ProjectImageProps, index: number) => (
-								<ProjectImage
-									image={image}
-									key={index}
-									border={border}
-								/>
-							)
-						)}
-				</div>
-
-				<div>
-					<ProjectSectionTitle title="Role" />
-					<p>{role}</p>
-				</div>
-				<div>
-					<ProjectSectionTitle title="Challenges" />
-					<p>{challenges}</p>
-				</div>
-				<div className="flex flex-col gap-3">
-					<ProjectSectionTitle title="Built With" />
-					<div className="flex flex-wrap gap-5">
-						{tech_used.map((tech: string, index: number) => (
-							<ProjectTechUsed
-								tech={tech}
-								key={index}
-								label={true}
-							/>
-						))}
-					</div>
-				</div>
-			</div> */}
 		</div>
 	);
 };

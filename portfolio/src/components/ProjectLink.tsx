@@ -10,7 +10,7 @@ interface ProjectLinkProps {
 	label: boolean;
 }
 
-const ProjectLink = ({ link, link_hover, border, label }: ProjectLinkProps) => {
+const ProjectLink = ({ link, link_hover, label }: ProjectLinkProps) => {
 	const { name, address } = link;
 	return (
 		<>

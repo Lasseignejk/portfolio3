@@ -1,6 +1,3 @@
-import { useState } from "react";
-import ProjectsNav from "./ProjectsNav";
-import Avocado from "./Avocado";
 import { projectData } from "../data";
 import ProjectCard from "./ProjectCard";
 
