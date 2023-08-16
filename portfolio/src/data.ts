@@ -41,8 +41,9 @@ export const projectData: ProjectDataProps[] = [
 			},
 		],
 		link_hover: "recipeBox_link",
-		description: "",
-		role: "",
+		description:
+			"Tired of keeping copies of your favorite recipes in a bunch of different places? Wish you could clear out some of those bookmarked recipes from your browser? Enter RecipeBox! With RecipeBox, you can keep all your favorite recipes in one place!",
+		role: "Working on a mighty team of one, I first design components in Figma before moving on to the code. I am also using Figma to organize my goals for RecipeBox so nothing is forgotten.",
 		challenges: "",
 	},
 	{
@@ -77,7 +78,8 @@ export const projectData: ProjectDataProps[] = [
 			},
 		],
 		link_hover: "openLibrary_link",
-		description: "",
+		description:
+			"Open Library is an open-source project aiming to create a web page for every book. In addition to browsing, patrons can also create lists with their favorite books and can even receive a virtual loan on certain books!",
 		role: "",
 		challenges: "",
 	},

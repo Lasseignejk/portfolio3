@@ -7,25 +7,30 @@ interface ProjectLinkProps {
 	};
 	link_hover: string;
 	border: string;
+	label: boolean;
 }
 
-const ProjectLink = ({ link, link_hover, border }: ProjectLinkProps) => {
+const ProjectLink = ({ link, link_hover, border, label }: ProjectLinkProps) => {
 	const { name, address } = link;
 	return (
 		<>
-			<a
-				href={address}
-				className={`link_icons duration-200 ease-in text-xl ${link_hover} opacity-80 md:hidden`}>
-				{name == "GitHub" && <FaGithub />}
-				{name == "YouTube" && <FaYoutube />}
-				{name == "Live Site" && <FaGlobe />}
-				{name == "Medium" && <FaMedium />}
-			</a>
-			<a
-				href={address}
-				className={`link_icons duration-200 ease-in text-sm ${link_hover} opacity-60 hidden md:block`}>
-				{name}
-			</a>
+			{!label && (
+				<a
+					href={address}
+					className={`link_icons duration-200 ease-in text-xl ${link_hover} opacity-80`}>
+					{name == "GitHub" && <FaGithub />}
+					{name == "YouTube" && <FaYoutube />}
+					{name == "Live Site" && <FaGlobe />}
+					{name == "Medium" && <FaMedium />}
+				</a>
+			)}
+			{label && (
+				<a
+					href={address}
+					className={`link_icons duration-200 ease-in ${link_hover} opacity-80`}>
+					{name}
+				</a>
+			)}
 		</>
 	);
 };

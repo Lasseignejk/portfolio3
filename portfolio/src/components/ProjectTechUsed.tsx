@@ -54,11 +54,15 @@ const ProjectTechUsed = ({
 			Supabase: <SiSupabase />,
 			TailwindCSS: <SiTailwindcss />,
 			Typescript: <SiTypescript />,
+			"and more!": "and more!",
 		};
 		return icons[tech] ? icons[tech] : <FaCode />;
 	};
+
+	const noLabelClasses: string = !label ? "h-[30px]" : "";
 	return (
-		<div className="flex flex-col text-center items-center text-xl">
+		<div
+			className={`flex flex-col text-center items-center justify-center text-xl ${noLabelClasses}`}>
 			{handleIcon(tech)}
 			{label && <p>{tech}</p>}
 		</div>
