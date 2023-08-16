@@ -1,12 +1,12 @@
 import { useParams } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { projectData } from "../data";
+import { projectData } from "../../data";
 import { useEffect, useState } from "react";
 import {
 	ProjectDataProps,
 	ProjectImageProps,
 	ProjectLinksProps,
-} from "../interfaces";
+} from "../../interfaces";
 import ProjectTechUsed from "./ProjectTechUsed";
 import ProjectLink from "./ProjectLink";
 import ProjectImage from "./ProjectImage";
@@ -126,6 +126,7 @@ const ProjectPage = () => {
 						</h1>
 					)}
 				</div>
+				{/* project links github, live, etc. */}
 				<div className="flex flex-col gap-4 items-center">
 					<p className="text-sm text-center">{formatDates(dates)}</p>
 					<div className="flex gap-3">
@@ -139,6 +140,7 @@ const ProjectPage = () => {
 							/>
 						))}
 					</div>
+					{/* project images */}
 					<div className="flex gap-3 h-[110px] sm:h-[150px] md:h-[200px] lg:h-[280px] xl:h-[400px]">
 						{images &&
 							images.map(

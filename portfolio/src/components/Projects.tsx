@@ -1,5 +1,5 @@
 import { projectData } from "../data";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./Project/ProjectCard";
 
 const Projects = (): JSX.Element => {
 	return (

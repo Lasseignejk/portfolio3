@@ -1,4 +1,4 @@
-import { ProjectImageProps } from "../interfaces";
+import { ProjectImageProps } from "../../interfaces";
 interface ImageProps {
 	image: ProjectImageProps;
 	border: string;
