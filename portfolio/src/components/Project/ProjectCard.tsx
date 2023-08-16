@@ -1,4 +1,4 @@
-import { ProjectDataProps, ProjectLinksProps } from "../interfaces";
+import { ProjectDataProps, ProjectLinksProps } from "../../interfaces";
 
 import ProjectLink from "./ProjectLink";
 
