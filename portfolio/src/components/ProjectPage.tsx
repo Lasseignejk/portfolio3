@@ -74,7 +74,6 @@ const ProjectPage = () => {
 		project_title,
 		logo,
 		title_font,
-		header_class,
 		dates,
 		tech_used,
 		colors_fonts,
@@ -82,7 +81,6 @@ const ProjectPage = () => {
 		border,
 		links,
 		link_hover,
-		description,
 		role,
 		challenges,
 	} = selectedProject;
