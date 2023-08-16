@@ -8,11 +8,12 @@ import ProjectLink from "./ProjectLink";
 import ProjectSectionTitle from "./ProjectSectionTitle";
 import ProjectImage from "./ProjectImage";
 import ProjectTechUsed from "./ProjectTechUsed";
+import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
 	project: ProjectDataProps;
-	openProject: OpenProjectState;
-	setOpenProject: React.Dispatch<React.SetStateAction<OpenProjectState>>;
+	// openProject: OpenProjectState;
+	// setOpenProject: React.Dispatch<React.SetStateAction<OpenProjectState>>;
 }
 
 interface OpenProjectState {
@@ -25,9 +26,9 @@ interface Months {
 
 const ProjectCard = ({
 	project,
-	openProject,
-	setOpenProject,
-}: ProjectCardProps) => {
+}: // openProject,
+// setOpenProject,
+ProjectCardProps) => {
 	const {
 		project_title,
 		logo,
@@ -45,20 +46,20 @@ const ProjectCard = ({
 		border,
 	} = project;
 
-	const openProjectClasses: string =
-		openProject[project_title] == true ? "flex flex-col gap-3" : "hidden";
+	// const openProjectClasses: string =
+	// 	openProject[project_title] == true ? "flex flex-col gap-3" : "hidden";
 
-	const openProjectButtonClasses: string =
-		openProject[project_title] == true ? "rotate-180" : "";
+	// const openProjectButtonClasses: string =
+	// 	openProject[project_title] == true ? "rotate-180" : "";
 
-	const handleClick = (title: string) => {
-		setOpenProject((prevState) => ({
-			...prevState,
-			[title]: !prevState[title],
-		}));
-	};
-	const openProjectHeaderClasses =
-		openProject[project_title] == true ? header_class : "";
+	// const handleClick = (title: string) => {
+	// 	setOpenProject((prevState) => ({
+	// 		...prevState,
+	// 		[title]: !prevState[title],
+	// 	}));
+	// };
+	// const openProjectHeaderClasses =
+	// 	openProject[project_title] == true ? header_class : "";
 
 	const formatDates = (date: string) => {
 		const months: Months = {
@@ -81,10 +82,14 @@ const ProjectCard = ({
 	};
 
 	return (
-		<div className={`flex flex-col gap-2 ${colors_fonts}`}>
+		<div className={`flex flex-col gap-2 ${colors_fonts} md:h-[315px]`}>
 			<div
-				className={`p-3 flex flex-col gap-5 hover:cursor-pointer ${openProjectHeaderClasses}`}
-				onClick={() => handleClick(project_title)}>
+				className={`p-3 flex flex-col items-center gap-2
+
+				`}
+				// ${openProjectHeaderClasses}
+				// onClick={() => handleClick(project_title)}
+			>
 				<div className="flex justify-between">
 					<div className="flex items-center gap-5">
 						{logo ? (
@@ -94,25 +99,13 @@ const ProjectCard = ({
 								{project_title}
 							</h1>
 						)}
-						<div className="gap-3 hidden md:flex">
-							{links.map(
-								(link: ProjectLinksProps, index: number) => (
-									<ProjectLink
-										link={link}
-										key={index}
-										link_hover={link_hover}
-										border={border}
-									/>
-								)
-							)}
-						</div>
 					</div>
-					<button className={`text-2xl ${openProjectButtonClasses}`}>
+					{/* <button className={`text-2xl ${openProjectButtonClasses}`}>
 						<FaCaretDown />
-					</button>
+					</button> */}
 				</div>
-				<div className="flex flex-col gap-2">
-					<p className="text-sm">{formatDates(dates)}</p>
+				<div className="flex flex-col gap-4 items-center">
+					<p className="text-sm text-center">{formatDates(dates)}</p>
 					<div className="flex gap-3 md:hidden">
 						{links.map((link: ProjectLinksProps, index: number) => (
 							<ProjectLink
@@ -123,12 +116,10 @@ const ProjectCard = ({
 							/>
 						))}
 					</div>
-					<p className="">{description}</p>
-					<div className="flex gap-5">
-						<p className="flex w-1/4 md:w-auto items-center font-bold">
-							Built With:
-						</p>
-						<div className="flex flex-wrap gap-5 w-2/3 md:w-auto justify-center md:justify-start">
+					<p className="text-center">{description}</p>
+					<div className="flex flex-col gap-1">
+						<p className="text-center font-bold">Built With:</p>
+						<div className="flex flex-wrap gap-5 justify-center md:justify-start">
 							{tech_used.map((tech: string, index: number) => (
 								<ProjectTechUsed
 									tech={tech}
@@ -138,11 +129,17 @@ const ProjectCard = ({
 							))}
 						</div>
 					</div>
+					<Link
+						to={`/${project_title}`}
+						className={`px-3 rounded-full hover:cursor-pointer ${border}`}>
+						Read More
+					</Link>
 				</div>
 			</div>
 
 			<div
-				className={`p-3 flex flex-col items-center md:items-start ${openProjectClasses} md:max-w-[1100px]`}>
+				className={`p-3 hidden items-center md:items-start  md:max-w-[1100px]`}>
+				{/* ${openProjectClasses} */}
 				<div className="flex gap-3 h-[110px] sm:h-[150px] md:h-[260px] lg:h-[300px] xl:h-[400px]">
 					{images &&
 						images.map(
@@ -155,7 +152,6 @@ const ProjectCard = ({
 							)
 						)}
 				</div>
-
 				{/* <div>
 					<ProjectSectionTitle title="Description" />
 					<p>{description}</p>

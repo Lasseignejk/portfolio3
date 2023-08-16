@@ -1,19 +1,14 @@
 import "./App.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Home from "./components/Home";
-import Nav from "./components/Nav";
-import Projects from "./components/Projects";
+import { Routes, Route } from "react-router-dom";
+import MainPage from "./components/MainPage";
+import ProjectPage from "./components/ProjectPage";
 
 function App() {
 	return (
-		<>
-			<Nav />
-			<Home />
-			<About />
-			<Projects />
-			<Contact />
-		</>
+		<Routes>
+			<Route path="/" element={<MainPage />} />
+			<Route path=":name" element={<ProjectPage />} />
+		</Routes>
 	);
 }
 
