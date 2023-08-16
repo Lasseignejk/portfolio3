@@ -23,13 +23,18 @@ export const projectData: ProjectDataProps[] = [
 		colors_fonts: "recipeBox_classes",
 		images: [
 			{
-				src: "",
-				alt: "",
-				style: "landscape",
+				src: "/recipeBoxRecipesMobile.png",
+				alt: "The mobile view of the 'Recipes' section on RecipeBox",
+				style: "portrait",
 			},
 			{
-				src: "",
-				alt: "",
+				src: "/recipeBoxRecipePageMobile.png",
+				alt: "A page showing more details of a recipe on mobile",
+				style: "portrait",
+			},
+			{
+				src: "/recipeBoxMealPlanningMobile.png",
+				alt: "The in-progress 'Meal Planning' section on mobile",
 				style: "portrait",
 			},
 		],
@@ -44,7 +49,8 @@ export const projectData: ProjectDataProps[] = [
 		description:
 			"Tired of keeping copies of your favorite recipes in a bunch of different places? Wish you could clear out some of those bookmarked recipes from your browser? Enter RecipeBox! With RecipeBox, you can keep all your favorite recipes in one place!",
 		role: "Working on a mighty team of one, I first design components in Figma before moving on to the code. I am also using Figma to organize my goals for RecipeBox so nothing is forgotten.",
-		challenges: "",
+		challenges:
+			"Every day brings a new challenge and a new opportunity to learn. Most of my troubles come from Typescript, but I've also had challenges with Formik. Other than technology, I sometimes find it challenging to plan ahead. I design and code something out and think it's done, only to remember what I want to eventually be able to do with the component. I keep reminding myself to get the base functionality and styling down then deploy it, then come back and add those features later. ",
 	},
 	{
 		project_title: "Open Library",
@@ -55,14 +61,9 @@ export const projectData: ProjectDataProps[] = [
 		colors_fonts: "openLibrary_classes",
 		images: [
 			{
-				src: "",
-				alt: "",
+				src: "/openLibraryTeamPage.png",
+				alt: "A look at the redesigned 'Team Page' on Open Library",
 				style: "landscape",
-			},
-			{
-				src: "",
-				alt: "",
-				style: "portrait",
 			},
 		],
 		border: "openLibrary_border",
@@ -80,8 +81,9 @@ export const projectData: ProjectDataProps[] = [
 		link_hover: "openLibrary_link",
 		description:
 			"Open Library is an open-source project aiming to create a web page for every book. In addition to browsing, patrons can also create lists with their favorite books and can even receive a virtual loan on certain books!",
-		role: "",
-		challenges: "",
+		role: "My current role is helping to refactor the 'Meet the Team' page on Open Library. The original design, shown in the picture above, was one that was created by another volunteer on Figma. Now that I've finished with the initial refactoring, more members of the community have chimed in, so I'm now working on the next big design and functionality features for the page.",
+		challenges:
+			"One of the hardest challenges has been learning the code base. While I learned Python in my bootcamp, we only learned the basics -- I mostly use it for algorithms now. Furthermore, the CSS is handled differently than I'm used to, with imports and pathways to follow instead of simple link tags. All of this meant it was a struggle to do even the simplest of tasks, but I also learned a lot and continue to learn every time I open up the code!",
 	},
 	{
 		project_title: "Avocado",
@@ -220,7 +222,7 @@ export const projectData: ProjectDataProps[] = [
 			},
 			{
 				name: "Live Site",
-				address: "",
+				address: "https://betterreads.onrender.com/",
 			},
 			{
 				name: "Medium",
@@ -269,6 +271,7 @@ export const projectData: ProjectDataProps[] = [
 		description:
 			"Become a Pokemon trainer and go on your very own Pokemon Adventure! You can catch Pokemon in various locations, find items to keep your journey going, and can even encounter Team Rocket!",
 		role: "This was a solo project at the end of the Python module in my bootcamp. I added in the basic game logic (catching Pokemon), then added more (locations, Team Rocket) based on feedback from testers.",
-		challenges: "",
+		challenges:
+			"The hardest thing on this project was time-management. Despite my bootcamp instructor warning us not too, I was still trying to add extra functionality the day before it was due. On future projects, I would like to be better at knowing when to stop adding and instead improve what's already there.",
 	},
 ];
