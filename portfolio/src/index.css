@@ -23,10 +23,58 @@ html {
 	scroll-behavior: smooth;
 }
 
+.recipeBox_classes {
+	background-color: #fff8f1;
+	color: #241a00;
+}
+
+.recipeBox_title {
+	font-family: "Annie Use Your Telescope", cursive;
+}
+
+.recipeBox_link:hover {
+	background-color: #e9e1d9;
+}
+
+.recipeBox_border {
+	border: 2px solid #7e7667;
+}
+
+.recipeBox_header {
+	box-shadow: 0px 1px 15px #e9e1d9;
+}
+
 .avocado_classes {
 	font-family: "Hind Madurai", "sans-serif";
 	background-color: #387f5f;
 	color: #efebe4;
+}
+
+.avocado_link:hover {
+	background-color: #145a3c;
+}
+
+.avocado_border {
+	border: 2px solid #0a0e39;
+}
+
+.avocado_header {
+	box-shadow: 0px 1px 15px #145a3c;
+}
+
+.openLibrary_classes {
+	background-color: #f3edde;
+	color: #666;
+	font-family: "Arial", "Helvetica", "sans-serif";
+}
+
+.openLibrary_link:hover {
+	/* background-color: #0376b8; */
+	background-color: hsl(48, 33%, 83%);
+}
+
+.openLibrary_border {
+	border: 2px solid hsl(64, 9%, 71%);
 }
 
 .egg_classes {
@@ -39,6 +87,18 @@ html {
 	font-family: "Grandstander", "cursive";
 }
 
+.egg_link:hover {
+	background-color: #ffd600;
+}
+
+.egg_border {
+	border: 2px solid #523200;
+}
+
+.egg_header {
+	box-shadow: 0px 1px 10px #cecdc7;
+}
+
 .reads_classes {
 	font-family: "Quicksand", "sans-serif";
 	background-color: #f7dfff;
@@ -47,6 +107,49 @@ html {
 
 .reads_title {
 	font-family: "DM Serif Text", "sans";
+}
+
+.reads_link:hover {
+	background-color: #d796ff;
+}
+
+.reads_border {
+	border: 2px solid #140024;
+}
+
+.reads_header {
+	box-shadow: 0px 1px 10px #c6b2cd;
+}
+
+.pokemon_classes {
+	background-color: #2b2b2b;
+	color: snow;
+}
+
+.pokemon_title {
+	font-family: "Source Code Pro", monospace;
+}
+
+.pokemon_link:hover {
+	background-color: #686868;
+}
+
+.pokemon_border {
+	border: 2px solid snow;
+}
+
+.pokemon_header {
+	box-shadow: 0px 1px 10px black;
+}
+
+.link_icons {
+	padding: 0px 8px;
+	border-radius: 20px;
+}
+
+.link_icons:hover {
+	cursor: pointer;
+	opacity: 100%;
 }
 
 @media screen and (orientation: landscape) and (max-width: 920px) {
