@@ -1,28 +1,20 @@
 import { useState } from "react";
 import ProjectsNav from "./ProjectsNav";
 import Avocado from "./Avocado";
-import TheBrokenEgg from "./TheBrokenEgg";
-import BetterReads from "./BetterReads";
+import { projectData } from "../data";
+import ProjectCard from "./ProjectCard";
 
 const Projects = (): JSX.Element => {
-	const [avocado, setAvocado] = useState<boolean>(true);
-	const [egg, setEgg] = useState<boolean>(false);
-	const [reads, setReads] = useState<boolean>(false);
 	return (
-			<section id="Projects" className="w-full min-h-screen bg-themeLtBlueGray">
-				<ProjectsNav
-					setAvocado={setAvocado}
-					setEgg={setEgg}
-					setReads={setReads}
-					avocado={avocado}
-					egg={egg}
-					reads={reads}
-				/>
-				{avocado && <Avocado />}
-				{egg && <TheBrokenEgg />}
-				{reads && <BetterReads />}
-			</section>
-		
+		<section
+			id="Projects"
+			className="min-h-screen w-full bg-themeLtBlueGray z-20 lg:pt-[3.5rem] lg:grid place-items-center">
+			<div className="md:grid md:grid-cols-2 lg:grid-cols-3 xl:gap-2">
+				{projectData.map((project, index) => (
+					<ProjectCard project={project} key={index} />
+				))}
+			</div>
+		</section>
 	);
 };
 
