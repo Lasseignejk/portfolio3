@@ -79,7 +79,7 @@ const Contact = (): JSX.Element => {
 						Connect with me on LinkedIn!
 					</h2>
 					<div className="text-[4.5rem] text-themeLtText hover:text-themeYellow ease-in duration-200 circleIcon">
-						<a href="https://www.linkedin.com/in/jayelon-lasseigne-66970a229/">
+						<a href="https://www.linkedin.com/in/jayelon-lasseigne/">
 							<FaLinkedin />
 						</a>
 					</div>

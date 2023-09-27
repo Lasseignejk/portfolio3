@@ -89,7 +89,7 @@ const Home = (): JSX.Element => {
 						</a>
 					</div>
 					<div className="text-[4.5rem] text-themeDkText hover:text-themeDkBlueGray ease-in duration-200 circleIcon">
-						<a href="https://www.linkedin.com/in/jayelon-lasseigne-66970a229/">
+						<a href="https://www.linkedin.com/in/jayelon-lasseigne/">
 							<FaLinkedin />
 						</a>
 					</div>
